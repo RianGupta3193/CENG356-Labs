@@ -5,12 +5,12 @@
 
 struct Account {                                            
     unsigned int account_number;                            
-    char account_type;                                   
+    char account_type;                                      
     char *last_name;                                        
-    char *first_name;                                     
-    float balance;                                       
+    char *first_name;                                       
+    float balance;                                          
     char reserved[6];                                       
-};                                                         
+};                                                          
 
 void displaySizes() {                                       // Function to determine and show sizes
     char alphabet;                                          // Declare a char variable
@@ -20,9 +20,7 @@ void displaySizes() {                                       // Function to deter
     float decimal;                                          // Declare a float variable
     double precise;                                         // Declare a double variable
     struct Account acc;                                     // Declare an Account struct variable
-                                                            
-    char *pChar;                                            // Declare a pointer to a char
-    short *pShort;                                          // Declare a pointer to a short
+
     int *pInt;                                              // Declare a pointer to an int
     long *pLong;                                            // Declare a pointer to a long
     float *pFloat;                                          // Declare a pointer to a float
@@ -38,8 +36,6 @@ void displaySizes() {                                       // Function to deter
     printf("double: %zu bytes\n", sizeof(precise));         // Display size of double variable
 
     printf("\n--- Pointer Data Types ---\n");               // Print header for pointer types
-    printf("char*:    %zu bytes\n", sizeof(pChar));         // Display size of char pointer variable
-    printf("short*:   %zu bytes\n", sizeof(pShort));        // Display size of short pointer variable
     printf("int*:     %zu bytes\n", sizeof(pInt));          // Display size of int pointer variable
     printf("long*:    %zu bytes\n", sizeof(pLong));         // Display size of long pointer variable
     printf("float*:   %zu bytes\n", sizeof(pFloat));        // Display size of float pointer variable
