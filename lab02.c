@@ -2,6 +2,7 @@
  ============================================================================
  Name        : Lab2.c
  Author      : Rian Gupta
+ ID          : N01653193
  Description : Lab 2 – Convert 8-bit signed binary to decimal
                and 32-bit binary to floating point number
  ============================================================================
