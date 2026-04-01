@@ -283,8 +283,9 @@ void loadCodeToMem(char *mem){
     setupInstructionMemory(mem, instructionSection, Instruction_storage);
 
 	// Memory dump the information on the screen.
-    puts("\n---- Data Section ----\n");
-    memory_dump(mem, DATASECTION, 256);
+    
     puts("\n---- Code Section ----\n");
     memory_dump(mem, CODESECTION, 256);
+	puts("\n---- Data Section ----\n");
+    memory_dump(mem, DATASECTION, 256);
 }
